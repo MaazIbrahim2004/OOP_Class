@@ -1,4 +1,4 @@
-package week3;
+package Week3;
 public class Car {
 	private String make;
 	private String model;

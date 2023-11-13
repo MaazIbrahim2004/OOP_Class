@@ -1,4 +1,4 @@
-package week4;
+package Week4;
 import java.util.*;
 import java.lang.String;
 

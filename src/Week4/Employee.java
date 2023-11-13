@@ -1,4 +1,4 @@
-package week4;
+package Week4;
 /**
  * This class represent an Employee with a name, ID, mailing address and home address
  * @author May Haidar

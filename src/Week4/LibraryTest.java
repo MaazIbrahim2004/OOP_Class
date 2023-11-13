@@ -1,4 +1,4 @@
-package week4;
+package Week4;
 
 public class LibraryTest {
 	public static void main(String[] args) {
