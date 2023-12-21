@@ -15,7 +15,7 @@ public class Account {
 	 * This the default constructor
 	 */
 	
-	public Account() {
+	public Account() { // default constructor
 		accountType = ' ';
 		accountNumber = 0;
 		balance = 0;
@@ -32,13 +32,13 @@ public class Account {
 		this.accountType = accType;
 		this.accountNumber = accNumber;
 		this.balance = balance;
-		this.dateOpened = openedDate; 
+		this.dateOpened = openedDate; // purposeful aliasing. Because Date what if I want to change the date of opening? Then all i have to do is to change the dateOpened.
 	}
 	/**
 	 * This is the copy constructor
 	 * @param acc is an object of Account that is used to create this object.
 	 */
-	public Account (Account acc) {
+	public Account (Account acc) { // copy constructor. We can use this constructor to create a deep copy of an object of Account.
 		this (acc.accountType, acc.accountNumber, acc.balance, acc.dateOpened);
 	}
 }

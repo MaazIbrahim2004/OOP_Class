@@ -1,3 +1,4 @@
+package Week10;
 import java.util.ArrayList;
 
 public class StackTester {
@@ -121,8 +122,8 @@ class StringStack{
 class Stack <E>{
 	ArrayList<E> stack; 
 	public Stack() {
-		stack = new ArrayList<E>();
-	}
+		stack = new ArrayList<E>(); // when we create an object of the stack class, we create an array list of type E thats is basically inside the stack class
+	} // stack class is a special type of array list
 	/**
 	 * 
 	 * @param element is a genric type that is added to the stack

@@ -12,6 +12,9 @@ public class LibraryTest {
 		System.out.println(Employee.getCount()); // 2 because we created another employee object
 		System.out.println(Book.getBookNo());
 
+		MyString str = new MyString("Hello");
+
+
 		author = new String [2];
 		author[0] = "Robert Sedgewick";
 		author[1] = "Kevin Wayne";

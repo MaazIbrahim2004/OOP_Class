@@ -12,7 +12,7 @@ public class Customer {
 	String name; 
 	Calendar dob;
 	ArrayList<Account> account; // this is a list of accounts that this customer has opened.
-	// in main metho
+	// in main method, we will create an object of this class and then we will create an object of Account class and add it to this list.
 	/**
 	 * This is a constructor that uses a mixture of deep and shallow copy to create this object.
 	 * @param custName is the name of the customer

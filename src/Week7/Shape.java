@@ -1,5 +1,5 @@
 
-
+package Week7;
 public class Shape {
 	int centerX;
 	int centerY;

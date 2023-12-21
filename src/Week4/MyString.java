@@ -11,7 +11,9 @@ public class MyString {
 	ArrayList<Character> str;
 	
 	public MyString(String str) {
-		this.str = new ArrayList();
+		this.str = new ArrayList(); // when we create a new MyString object, we create a new arraylist
+		// but we can't change the arraylist after we create it, so we can't add or remove elements from it
+		// this is because wh
 		for (int i=0; i < str.length(); i++)
 			this.str.add(str.charAt(i));
 	}

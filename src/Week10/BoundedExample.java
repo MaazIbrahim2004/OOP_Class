@@ -1,4 +1,7 @@
+package Week10;
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class BoundedExample {
@@ -23,12 +26,12 @@ public class BoundedExample {
 		//System.out.println("Sum = " + obj1.sumOfList_v1(list2));
 		
 		// we use sumOfList_v2, that relaxes the restriction
-		System.out.println("Sum = " + obj1.sumOfList_v2(list2));
-		System.out.println("Sum = " + obj1.sumOfList_v2(list3));
+//		System.out.println("Sum = " + obj1.sumOfList_v2(list2));
+//		System.out.println("Sum = " + obj1.sumOfList_v2(list3));
 
 //		// use of upper bound wildcards		
 //		System.out.println(obj1.find(list1, 5));
-//		System.out.println(obj1.find(list2, 5));
+		System.out.println(obj1.find(list2, 5)); // since T can be any type, we must rely on the compiler to infer the type
 //		System.out.println(obj1.find(list3, 5.0));
 //		System.out.println(obj1.find(list4, "A"));
 //		// use of generic upper bound
@@ -51,7 +54,7 @@ public class BoundedExample {
 		//obj1.addNumbers(list9);
 		
 		// use of unbounded wildcards
-		System.out.println(equals(list2, list3));
+//		System.out.println(equals(list2, list3));
 //		System.out.println(equals(list5, list6));
 //		System.out.println(equals(list8, list9));
 		
@@ -97,7 +100,8 @@ public class BoundedExample {
 	    return found;
 	}
 
-	public <T> boolean search(List<? extends T> list, T element) {
+	public <T> boolean search(List<? extends T> list, T element) { // doing List<T> list will not work as T is not defined
+		// we do extends T, because we want to use the equals method, which is defined in the Object class
 		boolean found = false;
 	    for (int i = 0; i < list.size(); i++)
 	    	if (list.get(i).equals(element)) {
@@ -137,8 +141,7 @@ public class BoundedExample {
 				}
 	    return equal;
 	}
-	
-}
+	}
 
 
 

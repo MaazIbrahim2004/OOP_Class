@@ -36,9 +36,6 @@ public class Aliasing {
 		car.setMake("Toyota");
 		System.out.println(carCopy.getMake());
 		System.out.println("#########");
-		
-		
-		
 
 		/* The first side effect of aliasing: the object is no longer needed. so all the references should be nullified.
 		 * otherwise, GC can not clean up the memory allocated to the object
@@ -82,7 +79,7 @@ public class Aliasing {
 		char[] plateNo = myCar.getPlateNumber();
 		plateNo[0] = 'Y';
 		System.out.println(plateNo);
-		System.out.println(myCar.getPlateNumber());
+		System.out.println(myCar.getPlateNumber()); // isn't affected because of deep copy. When we change the plateNo, we are not changing the plateNo of myCar
 		
 		String name = "John";
 		String nameClone = name; 
